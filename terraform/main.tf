@@ -5,13 +5,7 @@ terraform {
       version = ">= 1.7.0"
 }
 }
-    env_vars = {
-        ENV = {
-        value = "production"
-        }
-      
-    }
-  
+
 }
 
 provider "render" {
@@ -36,5 +30,12 @@ resource "render_web_service" "flask_app" {
       tag       = var.image_tag
     }
   }
+    env_vars = {
+        ENV = {
+        value = "production"
+        }
+      
+    }
+  
 
 }
