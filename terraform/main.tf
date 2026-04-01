@@ -3,13 +3,15 @@ terraform {
     render = {
       source  = "render-oss/render"
       version = ">= 1.7.0"
+}
+}
     env_vars = {
         ENV = {
         value = "production"
         }
-      }
+      
     }
-  }
+  
 }
 
 provider "render" {
