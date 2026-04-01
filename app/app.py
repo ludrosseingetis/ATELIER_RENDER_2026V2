@@ -11,6 +11,10 @@ def home():
 def health():
     return {"status": "Tout est ok ou pas"}
 
+@app.route("/env")
+def env():
+    return {"env": os.getenv("ENV")}
+    
 @app.route("/info")
 def info():
     return {
