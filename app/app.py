@@ -6,15 +6,15 @@ app = Flask(__name__)
 @app.route("/")
 def home():
     return "Flask + Docker + GHCR + Terraform + Render"
-
-@app.route("/health")
-def health():
-    return {"status": "Tout est ok ou pas"}
-
 @app.route("/env")
 def env():
     return {"env": os.getenv("ENV")}
     
+@app.route("/health")
+def health():
+    return {"status": "Tout est ok ou pas"}
+
+
 @app.route("/info")
 def info():
     return {
