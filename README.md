@@ -5,7 +5,6 @@ L’idée en 30 secondes : Dans cet atelier, vous allez construire une **chaîne
   
 **Architecture cible :** Ci-dessous, voici l'architecture cible souhaitée.   
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/e06361ad-18fd-403f-b642-d021d2a46f62" />
-
 -------------------------------------------------------------------------------------------------------
 🧩 Séquence 1 : Github
 -------------------------------------------------------------------------------------------------------
