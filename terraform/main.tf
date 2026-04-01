@@ -3,6 +3,11 @@ terraform {
     render = {
       source  = "render-oss/render"
       version = ">= 1.7.0"
+    env_vars = {
+        ENV = {
+        value = "production"
+        }
+      }
     }
   }
 }
@@ -16,11 +21,7 @@ variable "github_actor" {
   description = "GitHub username"
   type        = string
 }
-env_vars = {
-  ENV = {
-    value = "production"
-  }
-}
+
 
 resource "render_web_service" "flask_app" {
   name   = "flask-render-iac-${var.github_actor}"
